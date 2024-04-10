@@ -1,33 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 * {
   padding: 0px;
   margin: 0px;
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
 
-  --amber-50: #fffbeb;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+
   --amber-100: #fef3c7;
   --amber-500: #f59e0b;
   --amber-600: #d97706;
   --slate-300: #cbd5e1;
-  --slate-400: #94a3b8;
   --slate-500: #64748b;
-  --slate-600: #475569;
   --slate-700: #334155;
-  --slate-800: #1e293b;
-  --slate-900: #0f172a;
   --transparent: rgb(255, 255, 255, 0.2);
-
-  height: 100%;
-  width: 100%;
-
-  color: white;
 
   background: linear-gradient(
     -45deg,
@@ -52,32 +46,53 @@ body {
   }
 }
 
-/* Styles for testing only. */
-img {
-  width: 150px;
-  height: 200px;
+/* Page wrapper styles. */
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr 0.5fr;
 }
 
-.card-grid {
-  border: 1px solid yellow;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  grid-template-rows: 1fr 1fr;
-  place-items: center;
-  row-gap: 1rem;
-}
+/* Header and footer styles. */
 
 header,
 footer {
   background-color: var(--transparent);
-  padding: 2rem;
   text-align: center;
+}
+
+a {
+  color: white;
+}
+
+header {
+  padding: 2rem;
+  font-size: 0.8rem;
+  font-family: "Playfair Display", serif;
+}
+
+footer {
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* App styles. */
+
+.app {
+  justify-content: center;
+  padding: 3rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /*Card styles. */
 
 .card {
   position: relative;
+  background-color: var(--transparent);
   border: 10px solid var(--transparent);
   border-radius: 10px;
 
@@ -85,14 +100,19 @@ footer {
   height: 200px;
 }
 
+.card:hover,
+.card:focus {
+  border: 10px solid rgba(255, 255, 255, 0.3);
+}
+
 .card .front {
   transform: rotateY(90deg);
-  transition: all ease-in 200ms;
+  transition: ease-in 300ms;
   position: absolute;
 }
 
 .card .back {
-  transition: ease-in-out 300ms;
+  transition: ease-in 300ms;
   transition-delay: 200ms;
 }
 
@@ -103,18 +123,55 @@ footer {
 
 .flipped .front {
   transform: rotateY(0deg);
-  transition-delay: 200ms;
+  transition-delay: 300ms;
 }
 
 .highlighted {
   border: 10px solid var(--amber-100);
 }
 
-/* App styles. */
+img {
+  width: 150px;
+  height: 200px;
+}
 
-.app {
-  justify-content: center;
-  padding: 2rem 1rem 1rem 1rem;
+.card-grid {
+  padding: 0 2rem 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  row-gap: 2rem;
+}
+
+/*Game stats styles. */
+
+.turns,
+.record {
+  background-color: var(--transparent);
+}
+
+.turns,
+.record,
+button {
+  padding: 0.3rem 0.5rem;
+}
+
+.game-stats {
   display: flex;
-  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: var(--amber-600);
+  color: white;
+  outline: none;
+  border: none;
+}
+
+button:focus,
+button:hover {
+  background-color: var(--amber-500);
 }
