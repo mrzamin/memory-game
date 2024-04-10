@@ -4,7 +4,8 @@
   
 [See it live](#)
 
-![App Preview](#)
+![App Preview](https://github.com/mrzamin/memory-game/assets/142754418/49a6af0c-0814-4df2-a46a-367a2459877d)
+
 
 </div>
   
@@ -14,9 +15,7 @@ Built with React, the main goal of this project was to implement the concepts of
 
 ### Requirements
 
-The requirements for this project are listed below, however, I did decide to deviate from them a bit in order to implement a more familiar version of a memory card game. In my iteration, the player's objective is to try to remember the position of each of the cards to create perfect matches.
-
-https://www.theodinproject.com/lessons/node-path-react-new-memory-card
+The requirements for this project are listed [here](https://www.theodinproject.com/lessons/node-path-react-new-memory-card), however, I did decide to deviate from them a bit in order to implement a more familiar version of a memory card game. In my iteration, the player's objective is to try to remember the position of each of the cards to create perfect matches.
 
 My memory game
 
