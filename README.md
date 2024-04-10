@@ -2,7 +2,7 @@
 
 <div align="center">
   
-[See it live](#)
+[See it live](https://abstract-memory-game.vercel.app/)
 
 ![App Preview](https://github.com/mrzamin/memory-game/assets/142754418/49a6af0c-0814-4df2-a46a-367a2459877d)
 
