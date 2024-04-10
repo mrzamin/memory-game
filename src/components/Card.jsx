@@ -1,4 +1,4 @@
-import coverImage from "../../public/cover-image.png";
+import coverImage from "../../public/imgs/cover-image.png";
 import "../styles/index.css";
 
 export function Card({ card, flipped, handleClick, isDisabled }) {
