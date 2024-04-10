@@ -1,8 +1,25 @@
-# React + Vite
+# Marisa's Abstract Art Memory Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  
+[See it live](#)
 
-Currently, two official plugins are available:
+![App Preview](#)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
+  
+## About This Project
+
+### Requirements
+
+## Lessons Learned
+
+## What I'd Like to Work On in the Future
+
+## Credits
+
+## License
+
+© 2024 mrzamin
+
+Licensed under the [MIT License](#)
